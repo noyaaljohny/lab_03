@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./index_form.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="./contact_form.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h1>Contact Me</h1>
+                <p>Always here for Help!</p>
+            </header>
+
+            <form action="/thanks_form.html" method="post" name="contact-me">
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <div>
+                        <br><label for="firstName">First Name:</label><br>
+                        <input type="text" name="firstName" id="firstName" required maxlength="20" minlength="1" placeholder="Noyal">
+                    </div>
+
+                    <div>
+                        <br><label for="middleName">Middle Name:</label><br>
+                        <input type="text" name="middleName" id="middleName" required maxlength="20" minlength="1" placeholder="Johny">
+                    </div>
+
+                    <div>
+                        <br><label for="lastName">Last Name:</label><br>
+                        <input type="text" name="lastName" id="lastName" required maxlength="20" minlength="1" placeholder="David">
+                    </div>
+
+                    <div>
+                        <br><label for="college">Institution/College Name:</label><br>
+                        <input type="text" name="college" id="college" required maxlength="20" minlength="1" placeholder="eg: Georgian College/ARCO">
+                    </div>
+
+                    <div>
+                        <br><label for="gender">Select the Gender:</label><br>
+                        <span>Male</span><input type="radio" id="gender"> 
+                        <span>Female</span><input type="radio" name="gender"> 
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Options</legend>
+
+                    <div>
+                        <br><label for="email">Email:</label><br>
+                        <input type="email" name="email" id="email" required placeholder="eg: noyal.johny07@mail.com">
+                    </div>
+
+                    <div>
+                        <br><label for="tel">Phone:</label><br>
+                        <input type="tel" name="tel" id="tel" placeholder="eg: (707)-770-7777">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Inquiry</legend>
+
+                    <div>
+                        <br><label for="inquiry">What is your inquiry about?</label><br>
+                        <select name="inquriy" id="inquiry">
+                            <option>Select an Inquiry</option>
+                            <option value="personal">Personal Help</option>
+                            <option value="skill">Skill Development</option>
+                            <option value="academics">Academic Help</option>
+                            <option value="career">Career Oppurtunity</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="general">General inquiry</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <br><label for="message">Your message:</label><br>
+                        <textarea name="message" id="message" cols="40" rows="20"></textarea>
+                    </div>
+                </fieldset>
+
+                <p>
+                    <a href="./thanks_form.html">SUBMIT</a> 
+                </p>
+            </form>
+        </main>
+    </body>
+</html>
